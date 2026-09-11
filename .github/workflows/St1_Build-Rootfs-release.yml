@@ -79,7 +79,6 @@ jobs:
       run: |
         cp arm64/build24.sh imagebuilder/
         #cp arm64/{Makefile,repositories.conf} imagebuilder/
-        cp arm64/repositories.conf imagebuilder/
         cp shell/*-packages.sh imagebuilder/
         find files/packages/ -name "*.ipk" -exec cp {} imagebuilder/packages/ \;
         
