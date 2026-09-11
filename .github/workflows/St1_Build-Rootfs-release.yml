@@ -80,7 +80,7 @@ jobs:
         cp arm64/build24.sh imagebuilder/
         #cp arm64/{Makefile,repositories.conf} imagebuilder/
         cp shell/*-packages.sh imagebuilder/
-        find files/packages/ -name "*.ipk" -exec cp {} imagebuilder/packages/ \;
+        find files/packages/ -name "*.apk" -exec cp {} imagebuilder/packages/ \;
         
         mkdir -p imagebuilder/files/etc/{uci-defaults,banner1}
         # 添加开机启动脚本
